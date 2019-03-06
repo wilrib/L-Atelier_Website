@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="boomerang.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="menu.css">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <script>
+            $(window).scroll(function () {
+                var sc = $(window).scrollTop()
+                if (sc > 100) {
+                    $("#main-navbar").addClass("navbar-scroll")
+                } else {
+                    $("#main-navbar").removeClass("navbar-scroll")
+                }
+            });
+        </script>
+        <nav id="main-navbar" class="navbar navbar-default navbar-fixed-top">
+            <div class="container navbar-container">
+                <div class="navbar-header">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <img src="./image/logo.png" alt="" id="logo">                
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top-social">
+                    <ul id="top-social-menu">
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Accueil</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="intro texturized lg-cm">
+        <div class="box">
+            <!-- <h1>MENU DE L'ATELIER</h1> -->
+            <!-- <p>Browse through Green Rebel’s delicious fresh menu and start making the right food choices today.</p> -->
+            <div class="carrot"></div>
+            <a href="#" id="scroll-down" class="scroll-down"><i class="icon-arrow"></i></a>
+        </div>
+    </div>
+
+    <div class="bgimg-1">
+        <div class="caption">
+            <!-- <span class="border">SCROLL DOWN</span> -->
+        </div>
+    </div>
+
+    <div class="menu-panel">
+        <!-- <h3 style="text-align:center;">Parallax Demo</h3> -->
+        <div class="content-header">
+            <h3>Entree</h3>
+        </div>
+        <div class="menu-details">
+            <ul>
+                <li>
+                    <div class="standard-meal">
+                        <p>Feta Chicken</p>
+                        <span>mixed greens, house roasted chicken, bacon, feta, cucumber, pink apple, dried
+                            cranberries, Greek
+                            vinaigrette or honey mustard</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="standard-meal">
+                        <p>Quinoa Kale </p>
+                        <span>baby spinach, kale, quinoa, toasted almonds, toasted pumpkin seeds, cucumber, carrot,
+                            dried
+                            cranberries, balsamic vinaigrette</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="standard-meal">
+                        <p>Rebel Cobb </p>
+                        <span>mixed greens, house roasted chicken, bacon, chopped egg, avocado, tomato, choice of ranch
+                            or blue
+                            cheese dressing</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="standard-meal">
+                        <p>Taco Chicken </p>
+                        <span>romaine, house roasted chicken, black beans, red onion, cheddar, salsa, tortilla, corn,
+                            ranch
+                            dressing</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="standard-meal">
+                        <p>Greek Goddess </p>
+                        <span>kale, baby spinach, feta, quinoa, tomato, cucumber, carrot, chickpeas, spicy sunflower
+                            seeds,
+                            basil, Greek goddess dressing</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="standard-meal">
+                        <p>Beet Box 2.0</p>
+                        <span>kale, house-made beet fritter, pickled fennel, beets, watermelon radish, quinoa, basil,
+                            toasted
+                            pumpkin seeds, yogurt, orange horseradish vinaigrette</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the
+            foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed
+            posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit
+            dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur
+            aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl
+            dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio.
+            Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem
+            mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante
+            augue etiam maecenas, porta porttitor placerat leo.</p> -->
+    </div>
+
+    <div class="bgimg-3">
+        <div class="caption">
+            <!-- <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span> -->
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div class="menu-panel">
+            <!-- <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p> -->
+            <div class="content-header">
+                <h3>Viandes</h3>
+            </div>
+            <div class="menu-details">
+                <ul>
+                    <li>
+                        <div class="standard-meal">
+                            <p>Feta Chicken</p>
+                            <span>mixed greens, house roasted chicken, bacon, feta, cucumber, pink apple, dried
+                                cranberries, Greek
+                                vinaigrette or honey mustard</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="standard-meal">
+                            <p>Quinoa Kale </p>
+                            <span>baby spinach, kale, quinoa, toasted almonds, toasted pumpkin seeds, cucumber, carrot,
+                                dried
+                                cranberries, balsamic vinaigrette</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="standard-meal">
+                            <p>Rebel Cobb </p>
+                            <span>mixed greens, house roasted chicken, bacon, chopped egg, avocado, tomato, choice of
+                                ranch
+                                or blue
+                                cheese dressing</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="standard-meal">
+                            <p>Taco Chicken </p>
+                            <span>romaine, house roasted chicken, black beans, red onion, cheddar, salsa, tortilla,
+                                corn,
+                                ranch
+                                dressing</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="standard-meal">
+                            <p>Greek Goddess </p>
+                            <span>kale, baby spinach, feta, quinoa, tomato, cucumber, carrot, chickpeas, spicy
+                                sunflower
+                                seeds,
+                                basil, Greek goddess dressing</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="standard-meal">
+                            <p>Beet Box 2.0</p>
+                            <span>kale, house-made beet fritter, pickled fennel, beets, watermelon radish, quinoa,
+                                basil,
+                                toasted
+                                pumpkin seeds, yogurt, orange horseradish vinaigrette</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="bgimg-2">
+        <div class="caption">
+            <!-- <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span> -->
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div class="menu-panel">
+            <!-- <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p> -->
+            <div class="content-header">
+                <h3>Poissons</h3>
+            </div>
+            <div class="menu-details">
+                <ul>
+                    <li>
+                        <div class="standard-meal">
+                            <p>Feta Chicken</p>
+                            <span>mixed greens, house roasted chicken, bacon, feta, cucumber, pink apple, dried
+                                cranberries, Greek
+                                vinaigrette or honey mustard</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="standard-meal">
+                            <p>Quinoa Kale </p>
+                            <span>baby spinach, kale, quinoa, toasted almonds, toasted pumpkin seeds, cucumber, carrot,
+                                dried
+                                cranberries, balsamic vinaigrette</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="standard-meal">
+                            <p>Rebel Cobb </p>
+                            <span>mixed greens, house roasted chicken, bacon, chopped egg, avocado, tomato, choice of
+                                ranch
+                                or blue
+                                cheese dressing</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="standard-meal">
+                            <p>Taco Chicken </p>
+                            <span>romaine, house roasted chicken, black beans, red onion, cheddar, salsa, tortilla,
+                                corn,
+                                ranch
+                                dressing</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="standard-meal">
+                            <p>Greek Goddess </p>
+                            <span>kale, baby spinach, feta, quinoa, tomato, cucumber, carrot, chickpeas, spicy
+                                sunflower
+                                seeds,
+                                basil, Greek goddess dressing</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="standard-meal">
+                            <p>Beet Box 2.0</p>
+                            <span>kale, house-made beet fritter, pickled fennel, beets, watermelon radish, quinoa,
+                                basil,
+                                toasted
+                                pumpkin seeds, yogurt, orange horseradish vinaigrette</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="bgimg-4">
+        <div class="caption">
+            <!-- <span class="border">COOL!</span> -->
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div class="menu-panel">
+            <!-- <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p> -->
+            <div class="content-header">
+                <h3>Dessert</h3>
+            </div>
+            <div class="menu-details">
+                <ul>
+                    <li>
+                        <div class="standard-meal">
+                            <p>Feta Chicken</p>
+                            <span>mixed greens, house roasted chicken, bacon, feta, cucumber, pink apple, dried
+                                cranberries, Greek
+                                vinaigrette or honey mustard</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="standard-meal">
+                            <p>Quinoa Kale </p>
+                            <span>baby spinach, kale, quinoa, toasted almonds, toasted pumpkin seeds, cucumber, carrot,
+                                dried
+                                cranberries, balsamic vinaigrette</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="standard-meal">
+                            <p>Rebel Cobb </p>
+                            <span>mixed greens, house roasted chicken, bacon, chopped egg, avocado, tomato, choice of
+                                ranch
+                                or blue
+                                cheese dressing</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="standard-meal">
+                            <p>Taco Chicken </p>
+                            <span>romaine, house roasted chicken, black beans, red onion, cheddar, salsa, tortilla,
+                                corn,
+                                ranch
+                                dressing</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="standard-meal">
+                            <p>Greek Goddess </p>
+                            <span>kale, baby spinach, feta, quinoa, tomato, cucumber, carrot, chickpeas, spicy
+                                sunflower
+                                seeds,
+                                basil, Greek goddess dressing</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="standard-meal">
+                            <p>Beet Box 2.0</p>
+                            <span>kale, house-made beet fritter, pickled fennel, beets, watermelon radish, quinoa,
+                                basil,
+                                toasted
+                                pumpkin seeds, yogurt, orange horseradish vinaigrette</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" class="footer">
+        <div class="footer-bottom py-3">
+            <div class="container">
+                <div class="row cols-xs-space col-sm-space align-items-center">
+                    <div class="col-md-7 col-12">
+                        <div class="text-xs-center text-sm-left">
+                            <ul class="footer-menu">
+                                <li>
+                                    <a href="#" style="padding-left: 0;">Accueil</a>
+                                </li>
+                                <li>
+                                    <a href="#">A propos de nous</a>
+                                </li>
+                                <li>
+                                    <a href="#">Banquet</a>
+                                </li>
+                            </ul>
+
+                            <div class="copyright mt-1">
+                                <ul class="copy-links">
+                                    <li>
+                                        © 2019 Wilrib
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Mentions légales</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="text-xs-center text-sm-right">
+                            <ul class="social-media social-media--style-1-v4">
+                                <li>
+                                    <a href="#" class="facebook" target="_blank" data-toggle="tooltip"
+                                        data-original-title="Facebook">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="instagram" target="_blank" data-toggle="tooltip"
+                                        data-original-title="Instagram">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="email" target="_blank" data-toggle="tooltip" data-original-title="Email">
+                                        <i class="fa fa-envelope"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tripadvisor" target="_blank" data-toggle="tooltip"
+                                        data-original-title="TripAdvisor">
+                                        <i class="fa fa-tripadvisor"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
