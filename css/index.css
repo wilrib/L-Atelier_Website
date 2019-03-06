@@ -9,7 +9,9 @@ html {
 .bgimg-1,
 .bgimg-2,
 .bgimg-3,
-.bgimg-4 {
+.bgimg-4,
+.bgimg-5,
+.bgimg-6 {
   position: relative;
   z-index: -1;
   background-attachment: fixed;
@@ -21,19 +23,27 @@ html {
 }
 
 .bgimg-1 {
-  background-image: url("../image/bimg-7.jpg");
+  background-image: url("../image/bimg-12-min.jpg");
 }
 
 .bgimg-2 {
-  background-image: url("../image/bimg-5.jpg");
+  background-image: url("../image/bimg-9-min.jpg");
 }
 
 .bgimg-3 {
-  background-image: url("../image/bimg-6.jpg");
+  background-image: url("../image/bimg-10-min.jpg");
 }
 
 .bgimg-4 {
-  background-image: url("../image/bimg-4.jpg");
+  background-image: url("../image/bimg-13-min.jpg");
+}
+
+.bgimg-5 {
+  background-image: url("../image/bimg-8-min.jpg");
+}
+
+.bgimg-6 {
+  background-image: url("../image/bimg-14-min.jpg");
 }
 
 .caption {
@@ -62,6 +72,10 @@ h3 {
 
 p {
   color: #4d443d;
+  font-size: 25px !important;
+  font-weight: bold;
+  margin-bottom: 0 !important;
+  padding-top: 30px;
 }
 
 .menu-panel {
@@ -77,20 +91,22 @@ p {
 
 ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
 .menu-details {
-  width: 58%;
+  width: 60%;
   margin-top: 40px;
   font-size: 22px;
   line-height: 24px;
+  font-weight: lighter;
 }
 
 .content-header {
   border-bottom: 2px solid #4d443d;
   float: left;
   width: 100%;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   position: relative;
 }
 
@@ -98,7 +114,7 @@ ul {
   height: 75vh;
   min-height: 500px;
   width: -webkit-fill-available;
-  background: url(../image/texture-2.jpg);
+  background: url(../image/texture-2-min.jpg);
   background-size: cover;
   box-shadow: 0 5px 150px #000;
   z-index: 1;
@@ -161,7 +177,7 @@ ul {
     height: 120px;
   }
 
-  .navbar-nav > li > a {
+  .navbar-nav>li>a {
     padding: 0;
     margin-top: 35px;
     margin-left: 50px;
@@ -197,7 +213,7 @@ ul {
     line-height: 70px;
   }
 
-  .navbar-scroll .navbar-nav > li > a {
+  .navbar-scroll .navbar-nav>li>a {
     opacity: 1;
     padding: 0;
     margin-top: 0;
@@ -207,7 +223,7 @@ ul {
 /* # Hover Link Effect
 ================================ */
 @media (min-width: 768px) {
-  .navbar-nav > li > a::after {
+  .navbar-nav>li>a::after {
     position: absolute;
     top: 80%;
     left: 0;
@@ -220,8 +236,8 @@ ul {
     transform: translateY(-10px);
   }
 
-  .navbar-nav > li > a:hover::after,
-  .navbar-nav > li > a:focus::after {
+  .navbar-nav>li>a:hover::after,
+  .navbar-nav>li>a:focus::after {
     height: 2px;
     opacity: 1;
     transform: translateY(0px);
@@ -275,6 +291,7 @@ ul {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
+
   .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
