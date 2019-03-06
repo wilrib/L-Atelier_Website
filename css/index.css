@@ -21,19 +21,19 @@ html {
 }
 
 .bgimg-1 {
-  background-image: url("./image/bimg-7.jpg");
+  background-image: url("../image/bimg-7.jpg");
 }
 
 .bgimg-2 {
-  background-image: url("./image/bimg-5.jpg");
+  background-image: url("../image/bimg-5.jpg");
 }
 
 .bgimg-3 {
-  background-image: url("./image/bimg-6.jpg");
+  background-image: url("../image/bimg-6.jpg");
 }
 
 .bgimg-4 {
-  background-image: url("./image/bimg-4.jpg");
+  background-image: url("../image/bimg-4.jpg");
 }
 
 .caption {
@@ -98,7 +98,7 @@ ul {
   height: 75vh;
   min-height: 500px;
   width: -webkit-fill-available;
-  background: url(image/texture-2.jpg);
+  background: url(../image/texture-2.jpg);
   background-size: cover;
   box-shadow: 0 5px 150px #000;
   z-index: 1;
