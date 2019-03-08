@@ -11,7 +11,9 @@ html {
 .bgimg-3,
 .bgimg-4,
 .bgimg-5,
-.bgimg-6 {
+.bgimg-6,
+.bgimg-7,
+.bgimg-8 {
   position: relative;
   z-index: -1;
   background-attachment: fixed;
@@ -44,6 +46,12 @@ html {
 
 .bgimg-6 {
   background-image: url("../image/bimg-14-min.jpg");
+}
+.bgimg-7 {
+  background-image: url("../image/bimg-15.jpg");
+}
+.bgimg-8 {
+  background-image: url("../image/bimg-16.jpg");
 }
 
 .caption {
@@ -126,6 +134,20 @@ ul {
   height: 60px;
 }
 
+/* .box {
+  position: relative;
+  top: 190px;
+  left: 200px;
+  width: 50%;
+  text-align: left;
+} */
+.intro .box {
+  width: 50%;
+  margin: auto;
+  position: relative;
+  top: 40%;
+}
+
 /* # Header, Main Menu
 ================================ */
 
@@ -174,7 +196,7 @@ ul {
 
 @media (min-width: 768px) {
   .navbar {
-    height: 120px;
+    height: 190px;
   }
 
   .navbar-nav>li>a {
@@ -198,9 +220,10 @@ ul {
   /* Navbar when scrolled */
 
   .navbar-scroll {
-    height: 70px;
+    height: 80px;
     box-shadow: 0 2px 10px #000;
-    background-color: #131313;
+    background-color: #4d443d;
+    transition: all .25s ease-out;
   }
 
   .navbar-scroll #top-social-menu {
