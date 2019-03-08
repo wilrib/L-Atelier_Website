@@ -6,7 +6,6 @@ html {
   color: #777;
 }
 
-.bgimg-1,
 .bgimg-2,
 .bgimg-3,
 .bgimg-4,
@@ -22,10 +21,6 @@ html {
   background-size: cover;
   height: 40vh;
   max-height: 400px;
-}
-
-.bgimg-1 {
-  background-image: url("../image/bimg-12-min.jpg");
 }
 
 .bgimg-2 {
@@ -47,9 +42,11 @@ html {
 .bgimg-6 {
   background-image: url("../image/bimg-14-min.jpg");
 }
+
 .bgimg-7 {
   background-image: url("../image/bimg-15.jpg");
 }
+
 .bgimg-8 {
   background-image: url("../image/bimg-16.jpg");
 }
@@ -61,14 +58,6 @@ html {
   width: 100%;
   text-align: center;
   color: #4d443d;
-}
-
-.caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
 }
 
 h3 {
@@ -206,19 +195,11 @@ ul {
     line-height: 70px;
   }
 
-  .navbar-brand {
-    font-size: 28px;
-    padding: 0;
-    height: 120px;
-    line-height: 120px;
-  }
-
   #top-social-menu {
     display: initial;
   }
 
   /* Navbar when scrolled */
-
   .navbar-scroll {
     height: 80px;
     box-shadow: 0 2px 10px #000;
@@ -241,6 +222,8 @@ ul {
     padding: 0;
     margin-top: 0;
   }
+}
+
 }
 
 /* # Hover Link Effect
@@ -301,21 +284,9 @@ ul {
   color: #543a1a;
 }
 
-#top-social-menu i {
-  font-size: 16px;
-
-  transition: all 0.2s ease-in;
-}
-
-#top-social-menu i:hover {
-  text-decoration: none;
-  color: #543a1a;
-}
-
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
 
-  .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
     background-attachment: scroll;
