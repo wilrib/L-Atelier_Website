@@ -132,9 +132,17 @@ ul {
 } */
 .intro .box {
   width: 50%;
-  margin: auto;
+  margin-left: 18%;
   position: relative;
   top: 40%;
+}
+
+#carrot-img {
+  position: relative;
+  left: 62%;
+  height: 85vh;
+  top: auto;
+  bottom: -30%;
 }
 
 /* # Header, Main Menu
