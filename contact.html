@@ -7,7 +7,7 @@
     <title>L'Atelier Restaurant</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/boomerang.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/contact.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/bootstrap.min.css">
     <!-- <script src="index.js"></script> -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
@@ -52,95 +52,78 @@
                 </div>
             </div>
         </nav>
-
-        <!-- #### CAROUSEL FADE #### -->
-        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
-
-            <div class="carousel-inner">
-
-                <!-- #### SLIDE ONE #### -->
-                <div class="carousel-item active" style="background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)), url('https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260')">
-
-                    <div class="text-center p-3 hero">
-                        <div class="container">
-                            <div class="col">
-                                <h1 class="text-uppercase text-white text-hero"> atelier restaurant </h1>
-                                <h5 class="text-uppercase text-white mt-3 text-h5-hero"> la bonne cuisine, c’est le
-                                    souvenir </h5>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- #### SLIDE TWO #### -->
-                <div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)), url('https://images.pexels.com/photos/1268551/pexels-photo-1268551.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260')">
-
-                    <div class="text-center p-3 hero">
-                        <div class="container">
-                            <div class="col-12">
-                                <h1 class="text-uppercase text-white text-hero"> mongeront </h1>
-                                <h5 class="text-uppercase text-white mt-3 text-h5-hero"> cuisine, c’est le </h5>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- #### SLIDE THREE #### -->
-                <div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)), url('https://images.pexels.com/photos/9315/menu-restaurant-france-eating-9315.jpg?auto=compress&cs=tinysrgb&h=750&w=1260')">
-
-                    <div class="text-center p-3 hero">
-                        <div class="container">
-                            <div class="col">
-                                <h1 class="text-uppercase text-white text-hero"> restaurant </h1>
-                                <h5 class="text-uppercase text-white mt-3 text-h5-hero"> le souvenir </h5>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    &lsaquo; </a>
-
-
-
-
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    &rsaquo; </a>
-            </div>
     </header>
 
-    <div class="menu-panel">
-        <div class="content-header">
-            <h3>"La bonne cuisine c'est le souvenir"</h3>
+    <div class="intro texturized lg-cm">
+        <div class="box">
+            <h3>MENU DE L'ATELIER</h3>
+            <p>Scroller vers le bas pour découvrir le menu travaillé avec des produits frais et de saison par notre
+                chef Alex.</p>
+            <!-- faites defiler vers le bas -->
         </div>
-        <div class="menu-details">
-            <p>Si vous êtes tombés sur cette page, c’est que vous avez surement faim ! Ça tombe bien, notre restaurant
-                propose une
-                cuisine française traditionnelle, simple avec des produits frais et de saisons travaillés sur place par
-                notre chef
-                Alex et son équipe de cuisine. <br><br>
-                A l’Atelier, nous vous accueillons dans un cadre convivial et dépaysant tous les jours sauf le dimanche
-                soir.
-                Pendant les beaux jours, vous pourrez profiter de notre belle terrasse pour déguster une délicieuse
-                coupe de glace
-                en face d’un superbe cadre hippique. <br><br>
-                Enfin, si vous souhaitez organiser un événement (anniversaire, mariage, baptême) nous disposons d’une
-                salle de
-                banquet spacieuse à l’étage pouvant accueillir jusqu’à 100 personnes ! <br><br>
-                Au plaisir de vous retrouver parmi nous. <br><br>
-                L’équipe de l’Atelier
-            </p>
-        </div>
+        <img src="./image/carrot.png" alt="" id="carrot-img">
     </div>
 
-    <div class="bgimg-6">
+    <div class="bgimg-7">
         <div class="caption">
         </div>
     </div>
 
+    <!-- <form class="form" id="contactform" action="//formspree.io/willy91330@gmail.com" method="POST">
+        <fieldset class="field">
+            <input class="input" type="text" name="name" placeholder="Votre Nom" id="name" required>
+            <label class="label" for="name"><span class="label-content">Your name</span></label>
+        </fieldset>
+        <fieldset class="field">
+            <input class="input" type="email" name="_replyto" placeholder="Votre E-mail" id="_replyto" required>
+            <label class="label" for="_replyto"><span class="label-content">Your email</span></label>
+        </fieldset>
+        <fieldset class="field">
+            <textarea class="input" name="message" rows="1" placeholder="Votre Message" id="message" required></textarea>
+            <label class="label" for="message"><span class="label-content">Your message</span></label>
+        </fieldset>
+        <input class="hidden" type="text" name="_gotcha" style="display:none">
+        <input class="hidden" type="hidden" name="_subject" value="Message via https://wilrib.github.io/L-Atelier_Website/">
+        <fieldset class="field">
+            <input class="button submit" type="submit" value="Send">
+        </fieldset>
+    </form> -->
+
+    <!-- <div class="row"> -->
+    <div class="col-md-12 mb-4">
+        <!-- <div class="card-body"> -->
+        <form class="form" id="contactform" action="//formspree.io/willy91330@gmail.com" method="POST">
+            <h2 class="text-center py-4 font-bold font-up danger-text">Contactez nous</h2>
+            <div class="md-form">
+                <fieldset class="field">
+                    <i class="fa fa-user prefix grey-text"></i>
+                    <input type="text" placeholder="Votre Nom" id="name" required class="form-control input">
+                </fieldset>
+            </div>
+            <div class="md-form">
+                <fieldset class="field">
+                    <i class="fa fa-envelope prefix grey-text"></i>
+                    <input type="email" placeholder="Votre email" name="_replyto" id="name form31" required class="form-control input">
+                </fieldset>
+            </div>
+            <div class="md-form">
+                <fieldset class="field">
+                    <i class="fa fa-tag prefix grey-text"></i>
+                    <textarea class="form-control" name="message" rows="2" placeholder="Votre Message" id="form321 message"
+                        required></textarea>
+                </fieldset>
+            </div>
+            <input class="hidden" type="text" name="_gotcha" style="display:none">
+            <input class="hidden" type="hidden" name="_subject" value="Message via https://wilrib.github.io/L-Atelier_Website/">
+            <fieldset class="field">
+                <div class="text-center">
+                    <button class="btn btn-outline-danger btn-lg">Envoyer</button>
+                </div>
+            </fieldset>
+        </form>
+        <!-- </div> -->
+    </div>
+    <!-- </div> -->
 
     <footer id="footer" class="footer">
         <div class="footer-bottom py-3">
@@ -209,7 +192,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
