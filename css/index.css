@@ -52,13 +52,7 @@ html {
     color: #777;
 }
 
-.bgimg-2,
-.bgimg-3,
-.bgimg-4,
-.bgimg-5,
-.bgimg-6,
-.bgimg-7,
-.bgimg-8 {
+.bgimg-6 {
     position: relative;
     z-index: -1;
     background-attachment: fixed;
@@ -69,32 +63,9 @@ html {
     max-height: 400px;
 }
 
-.bgimg-2 {
-    background-image: url("../image/bimg-9-min.jpg");
-}
-
-.bgimg-3 {
-    background-image: url("../image/bimg-10-min.jpg");
-}
-
-.bgimg-4 {
-    background-image: url("../image/bimg-13-min.jpg");
-}
-
-.bgimg-5 {
-    background-image: url("../image/bimg-8-min.jpg");
-}
-
 .bgimg-6 {
-    background-image: url("../image/bimg-14-min.jpg");
-}
-
-.bgimg-7 {
-    background-image: url("../image/bimg-15.jpg");
-}
-
-.bgimg-8 {
-    background-image: url("../image/bimg-16.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)),
+        url('https://images.pexels.com/photos/395134/pexels-photo-395134.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
 }
 
 .caption {
@@ -115,10 +86,9 @@ h3 {
 
 p {
     color: #4d443d;
-    font-size: 25px !important;
-    font-weight: bold;
-    margin-bottom: 0 !important;
-    padding-top: 30px;
+    font-size: 22px !important;
+    line-height: 24px;
+    font-weight: lighter;
 }
 
 .menu-panel {
@@ -138,7 +108,7 @@ ul {
 }
 
 .menu-details {
-    width: 60%;
+    /* width: 60%; */
     margin-top: 40px;
     font-size: 22px;
     line-height: 24px;
@@ -146,7 +116,7 @@ ul {
 }
 
 .content-header {
-    border-bottom: 2px solid #4d443d;
+    /* border-bottom: 2px solid #4d443d; */
     float: left;
     width: 100%;
     padding-bottom: 10px;

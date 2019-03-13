@@ -24,31 +24,38 @@ html {
 }
 
 .bgimg-2 {
-  background-image: url("../image/bimg-9-min.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)),
+    url("../image/bimg-9-min.jpg");
 }
 
 .bgimg-3 {
-  background-image: url("../image/bimg-10-min.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)),
+    url("../image/bimg-10-min.jpg");
 }
 
 .bgimg-4 {
-  background-image: url("../image/bimg-13-min.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)),
+    url("../image/bimg-13-min.jpg");
 }
 
 .bgimg-5 {
-  background-image: url("../image/bimg-8-min.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)),
+    url("../image/bimg-8-min.jpg");
 }
 
 .bgimg-6 {
-  background-image: url("../image/bimg-14-min.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)),
+    url("../image/bimg-14-min.jpg");
 }
 
 .bgimg-7 {
-  background-image: url("../image/bimg-15.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)),
+    url("../image/bimg-15.jpg");
 }
 
 .bgimg-8 {
-  background-image: url("../image/bimg-16.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)),
+    url("../image/bimg-16.jpg");
 }
 
 .caption {
@@ -231,7 +238,6 @@ ul {
   }
 }
 
-}
 
 /* # Hover Link Effect
 ================================ */
@@ -279,13 +285,13 @@ ul {
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
 
-.bgimg-2,
-.bgimg-3,
-.bgimg-4,
-.bgimg-5,
-.bgimg-6,
-.bgimg-7,
-.bgimg-8 {
+  .bgimg-2,
+  .bgimg-3,
+  .bgimg-4,
+  .bgimg-5,
+  .bgimg-6,
+  .bgimg-7,
+  .bgimg-8 {
     background-attachment: scroll;
   }
 }
