@@ -247,7 +247,6 @@ ul {
     }
 }
 
-}
 
 /* # Hover Link Effect
 ================================ */
@@ -303,5 +302,15 @@ ul {
     .bgimg-7,
     .bgimg-8 {
         background-attachment: scroll;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-panel {
+        padding: 50px 30px;
+        text-align: justify;
+        width: auto;
+        min-width: auto;
+        margin: 0;
     }
 }

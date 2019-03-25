@@ -146,9 +146,8 @@ ul {
 #carrot-img {
   position: relative;
   left: 62%;
-  height: 85vh;
-  top: auto;
-  bottom: -30%;
+  height: 85%;
+  top: 30px;
 }
 
 /* # Header, Main Menu
@@ -263,6 +262,35 @@ ul {
   }
 }
 
+@media (max-width: 768px) {
+
+  p {
+    text-align: left;
+  }
+
+  .menu-panel {
+    padding: 50px 30px;
+    text-align: justify;
+    width: auto;
+    min-width: auto;
+    margin: 0;
+  }
+
+  .menu-details {
+    width: auto;
+  }
+
+  .intro .box {
+    padding: 0px 30px;
+    width: auto;
+    margin: 0;
+  }
+
+  #carrot-img {
+    display: none;
+  }
+}
+
 #top-social-menu li {
   float: left;
   padding: 10px 15px;
@@ -295,3 +323,9 @@ ul {
     background-attachment: scroll;
   }
 }
+
+/* @media only screen and (max-device-width: 768px) {
+  p {
+    text-align: left;
+  }
+} */
