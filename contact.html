@@ -23,37 +23,53 @@
     </script>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <script type="text/javascript" src="index.js"></script>
 </head>
 
-<body>
+<body class="body-class">
     <header>
-        <script>
-            $(window).scroll(function () {
-                var sc = $(window).scrollTop();
-                if (sc > 100) {
-                    $("#main-navbar").addClass("navbar-scroll");
-                    $(".logo").addClass("logo-scroll");
-                } else {
-                    $("#main-navbar").removeClass("navbar-scroll");
-                    $(".logo").removeClass("logo-scroll");
-                }
-            });
-        </script>
-        <nav id="main-navbar" class="navbar navbar-default navbar-fixed-top">
-            <div class="container navbar-container">
-                <div class="navbar-header">
-                    <img src="./image/logo.png" alt="" class="logo-scroll logo" href="./index.html" />
-                </div>
-                <div class="">
-                    <ul id="top-social-menu">
-                        <li><a href="./index.html">Accueil</a></li>
-                        <li><a href="./menu.html">Menu</a></li>
-                        <li><a href="#">Banquet</a></li>
-                        <li><a href="./contact.html">Rapprochons nous</a></li>
-                    </ul>
+        <div class="header">
+            <div class="navbar" id="main-navbar">
+                <div class="navbar__wrapper">
+                    <nav class="navbar__menu">
+                        <img src="./image/logo.png" alt="" class="logo-scroll logo" href="./index.html" />
+                        <div id="nav-icon3">
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                        <ul class="navbar__nav">
+                            <li class="navbar__link after-transform">
+                                <a href="./index.html">Accueil</a>
+                            </li>
+                            <li class="navbar__link after-transform">
+                                <a href="./menu.html">Menu</a>
+                            </li>
+                            <li class="navbar__link after-transform">
+                                <a href="./banquet.html">Banquet</a>
+                            </li>
+                            <li class="navbar__link after-transform">
+                                <a class="active" href="./contact.html">Rapprochons nous</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-        </nav>
+            <div class="navbar-responsive">
+                <ul class="navbar-responsive__nav">
+                    <li class="navbar-responsive__link after-transform">
+                        <a href="./index.html">Accueil</a>
+                    </li>
+                    <li class="navbar-responsive__link after-transform">
+                        <a href="./menu.html">Menu</a>
+                    </li>
+                    <li class="navbar-responsive__link after-transform">
+                        <a href="./banquet.html">Banquet</a>
+                    </li>
+                    <li class="navbar-responsive__link after-transform">
+                        <a class="active" href="./contact.html">Rapprochons nous</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <div class="intro texturized lg-cm">
@@ -90,7 +106,7 @@
             frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
-    <div class="mx-auto mb-4" style="width: 500px;">
+    <div class="container mx-auto mb-4">
         <form class="form" id="contactform" action="//formspree.io/willy91330@gmail.com" method="POST">
             <p class="text-center py-4 font-bold font-up mt-4">
                 N’hésitez pas à nous envoyer vos feedbacks ici !<br /><br />
@@ -137,7 +153,7 @@
                         <div class="text-xs-center text-sm-left">
                             <ul class="footer-menu">
                                 <li>
-                                    <a href="#" style="padding-left: 0;">Accueil</a>
+                                    <a href="#">Accueil</a>
                                 </li>
                                 <li>
                                     <a href="#">A propos de nous</a>
