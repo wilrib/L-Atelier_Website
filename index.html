@@ -26,25 +26,50 @@
     <script type="text/javascript" src="index.js"></script>
 </head>
 
-<body>
-
+<body class="body-class">
     <header>
-
-        <nav id="main-navbar" class="navbar navbar-default navbar-fixed-top">
-            <div class="container navbar-container">
-                <div class="navbar-header">
-                    <img src="./image/logo.png" alt="" class="logo-scroll logo" href="./index.html">
-                </div>
-                <div class="">
-                    <ul id="top-social-menu">
-                        <li><a href="./index.html">Accueil</a></li>
-                        <li><a href="./menu.html">Menu</a></li>
-                        <li><a href="#">Banquet</a></li>
-                        <li><a href="./contact.html">Rapprochons nous</a></li>
-                    </ul>
+        <div class="header">
+            <div class="navbar" id="main-navbar">
+                <div class="navbar__wrapper">
+                    <nav class="navbar__menu">
+                        <img src="./image/logo.png" alt="" class="logo-scroll logo" href="./index.html" />
+                        <div id="nav-icon3">
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                        <ul class="navbar__nav">
+                            <li class="navbar__link after-transform">
+                                <a class="active" href="./index.html">Accueil</a>
+                            </li>
+                            <li class="navbar__link after-transform">
+                                <a href="./menu.html">Menu</a>
+                            </li>
+                            <li class="navbar__link after-transform">
+                                <a href="./banquet.html">Banquet</a>
+                            </li>
+                            <li class="navbar__link after-transform">
+                                <a href="./contact.html">Rapprochons nous</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-        </nav>
+            <div class="navbar-responsive">
+                <ul class="navbar-responsive__nav">
+                    <li class="navbar-responsive__link after-transform">
+                        <a class="active" href="./index.html">Accueil</a>
+                    </li>
+                    <li class="navbar-responsive__link after-transform">
+                        <a href="./menu.html">Menu</a>
+                    </li>
+                    <li class="navbar-responsive__link after-transform">
+                        <a href="./banquet.html">Banquet</a>
+                    </li>
+                    <li class="navbar-responsive__link after-transform">
+                        <a href="./contact.html">Rapprochons nous</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
         <!-- #### CAROUSEL FADE #### -->
         <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
