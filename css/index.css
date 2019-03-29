@@ -102,6 +102,10 @@ p {
     margin: 50px auto 0;
 }
 
+.menu-panel h3 {
+    text-align: left;
+}
+
 ul {
     list-style-type: none;
     padding-left: 0;
@@ -356,10 +360,7 @@ ul {
 }
 
 .navbar-responsive .navbar-responsive__nav .navbar-responsive__link a:after {
-    top: 50%;
-    bottom: 0;
-    left: 0;
-    background-color: #fff;
+    text-decoration: underline;
 }
 
 .navbar .navbar__wrapper {
@@ -411,7 +412,7 @@ ul {
     left: 0;
     height: 2px;
     width: 100%;
-    background-color: #2196f3;
+    background-color: #7a1821;
     border-radius: 3px;
     transform: scaleX(0) translateZ(0);
     transform-origin: bottom center;
