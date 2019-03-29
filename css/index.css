@@ -84,6 +84,17 @@ h3 {
     color: #4d443d;
 }
 
+.loader {
+    position: fixed;
+    z-index: 9999;
+    background: url('/image/arton25.png') 50% 50% no-repeat;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    cursor: wait;
+}
+
 p {
     color: #4d443d;
     font-size: 22px !important;

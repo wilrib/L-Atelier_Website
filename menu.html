@@ -1,606 +1,534 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>L'Atelier Restaurant</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="./css/boomerang.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="./css/menu.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="./css/bootstrap.min.css"
-    />
-    <!-- <script src="index.js"></script> -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous"> -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
-    />
-    <script type="text/javascript" src="index.js"></script>
-  </head>
 
-  <body class="body-class">
-    <header>
-      <div class="header">
-        <div class="navbar" id="main-navbar">
-          <div class="navbar__wrapper">
-            <nav class="navbar__menu">
-              <img
-                src="./image/logo.png"
-                alt=""
-                class="logo-scroll logo"
-                href="./index.html"
-              />
-              <div id="nav-icon3">
-                <span></span><span></span><span></span><span></span>
-              </div>
-              <ul class="navbar__nav">
-                <li class="navbar__link after-transform">
-                  <a href="./index.html">Accueil</a>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137273508-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-137273508-1');
+  </script>
+  <!-- Hotjar Tracking Code for https://wilrib.github.io/L-Atelier_Website/ -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () {
+        (h.hj.q = h.hj.q || []).push(arguments)
+      };
+      h._hjSettings = {
+        hjid: 1260641,
+        hjsv: 6
+      };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script');
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>L'Atelier Restaurant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/boomerang.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/menu.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/bootstrap.min.css" />
+  <!-- <script src="index.js"></script> -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body class="body-class">
+  <header>
+    <div class="header">
+      <div class="navbar" id="main-navbar">
+        <div class="navbar__wrapper">
+          <nav class="navbar__menu">
+            <img src="./image/logo.png" alt="" class="logo-scroll logo" href="./index.html" />
+            <div id="nav-icon3">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <ul class="navbar__nav">
+              <li class="navbar__link after-transform">
+                <a href="./index.html">Accueil</a>
+              </li>
+              <li class="navbar__link after-transform">
+                <a class="active" href="./menu.html">Menu</a>
+              </li>
+              <li class="navbar__link after-transform">
+                <a href="./banquet.html">Banquet</a>
+              </li>
+              <li class="navbar__link after-transform">
+                <a href="./contact.html">Rapprochons nous</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="navbar-responsive">
+        <ul class="navbar-responsive__nav">
+          <li class="navbar-responsive__link after-transform">
+            <a href="./index.html">Accueil</a>
+          </li>
+          <li class="navbar-responsive__link after-transform">
+            <a class="active" href="./menu.html">Menu</a>
+          </li>
+          <li class="navbar-responsive__link after-transform">
+            <a href="./banquet.html">Banquet</a>
+          </li>
+          <li class="navbar-responsive__link after-transform">
+            <a href="./contact.html">Rapprochons nous</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="intro texturized lg-cm">
+    <div class="box">
+      <h3>MENU DE L'ATELIER</h3>
+      <p>
+        Scroller vers le bas pour découvrir le menu travaillé avec des
+        produits frais et de saison par notre chef Alex.
+      </p>
+      <!-- faites defiler vers le bas -->
+    </div>
+    <img src="./image/carrot.png" alt="" id="carrot-img" />
+  </div>
+
+  <div class="bgimg-7">
+    <div class="caption"></div>
+  </div>
+
+  <div class="menu-panel">
+    <div class="content-header">
+      <h3>Les Entrées</h3>
+    </div>
+    <div class="menu-details">
+      <ul>
+        <li>
+          <div class="standard-meal">
+            <p>Ardoise de charcuterie</p>
+            <span>Terrine de campagne, jambon de pays, rillettes, saucisson sec &
+              cornichons.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Tataki de Saumon</p>
+            <span>Un saumon au cinq baies snacké et moelleux au cœur.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Ardoise de foie gras</p>
+            <span>Foie gras de canard exquis accompagné de son chutney
+              d’oignons.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Risotto au poulet</p>
+            <span>Un risotto crémeux au poulet parfumé au curry et cébette.</span>
+            <!-- cebete au pluriel ? -->
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Assiette du Sud-Ouest</p>
+            <span>Magret fumé, gésiers, pommes de terre, salade & croûtons.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="bgimg-6">
+    <div class="caption"></div>
+  </div>
+
+  <div class="menu-panel">
+    <div class="content-header">
+      <h3>Les Salades</h3>
+    </div>
+    <div class="menu-details">
+      <ul>
+        <li>
+          <div class="standard-meal">
+            <p>La César (grande ou petite)</p>
+            <span>Huile d’olive, filet de poulet grillé, copeaux de parmesan &
+              sauce césar.</span>
+            <!-- huile d'olive en premier chelou -->
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>La Croustillante (grande ou petite)</p>
+            <span>Duo de chou rouge & chou blanc accompagné de poulet.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>L’Atelier (grande ou petite)</p>
+            <span>Chèvre pané, pommes de terre, oignons, lardons, cerneaux de
+              noix & sa fine baguette maison aux herbes.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="bgimg-3">
+    <div class="caption"></div>
+  </div>
+
+  <div class="menu-panel">
+    <div class="content-header">
+      <h3>Les Viandes</h3>
+    </div>
+    <div class="menu-details">
+      <ul>
+        <li>
+          <div class="standard-meal">
+            <p>Entrecôte de bœuf 300gr</p>
+            <span>Belle pièce de bœuf origine UE accompagnée de potatoes
+              maison.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Pièce du boucher 300gr</p>
+            <span>Filet de bœuf très tendre accompagné de son écrasé de pommes de
+              terre.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Steak tartare classique 180gr</p>
+            <span>Viande coupée au couteau accompagnée de ses frites maison &
+              condiments.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Côte de Veau 300gr</p>
+            <span>Superbe viande blanche servie avec ses tagliatelles sauce
+              forestière.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Sauté d’agneau et son jus à l’ail</p>
+            <span>Morceau de choix cuit à point à savourer avec ses légumes de
+              saisons.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Burger de l’Atelier 180gr</p>
+            <span>Incontournable avec sa viande, ses oignons rouges, salade,
+              fromage fondant et sa sauce maison.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="bgimg-8">
+    <div class="caption"></div>
+  </div>
+
+  <div class="menu-panel">
+    <div class="content-header">
+      <h3>Les spécialités</h3>
+    </div>
+    <div class="menu-details">
+      <ul>
+        <li>
+          <div class="standard-meal">
+            <p>Rognons de veau</p>
+            <span>Délicieux rognons de veau flambés au cognac et ses
+              tagliatelles.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Magret de canard 300gr</p>
+            <span>Délicieux magrets servis avec une sauce fruits rouges & purée
+              de patate douce.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Camembert rôti au four</p>
+            <span>Délicieuse recette de camembert, frites maisons & salade aux
+              noix.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="bgimg-2">
+    <div class="caption"></div>
+  </div>
+
+  <div class="menu-panel">
+    <div class="content-header">
+      <h3>Les Poissons</h3>
+    </div>
+    <div class="menu-details">
+      <ul>
+        <li>
+          <div class="standard-meal">
+            <p>Pavé de saumon</p>
+            <span>Saumon cuit au four vapeur sur son lit de poireaux accompagné
+              de riz crémeux aux cébettes.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Dos de cabillaud 300gr</p>
+            <span>Cabillaud terre et mer cuit à la plancha, huile d’olive,
+              haricots plats & crème de lard.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Noix de St Jacques</p>
+            <span>Accompagné d’une délicieuse purée de patate douce et riz
+              crémeux.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Filet de Daurade 300gr</p>
+            <span>Poisson à chair blanche cuit à la plancha & ses légumes de
+              saison.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="bgimg-5">
+    <div class="caption"></div>
+  </div>
+
+  <div class="menu-panel">
+    <div class="content-header">
+      <h3>Les Pizzas</h3>
+    </div>
+    <div class="menu-details">
+      <ul>
+        <li>
+          <div class="standard-meal">
+            <p>Margherita</p>
+            <span>Tomate, fromage, olives.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Calzone (Soufflée)</p>
+            <span>Tomate, fromage, jambon, œuf.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>4 Saisons</p>
+            <span>Tomate, fromage, jambon, cœurs d’artichauds, olives,
+              champignons.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Reine</p>
+            <span>Tomate, jambon, fromage, champignons.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>4 fromages</p>
+            <span>Tomate, mozzarella, gorgonzola, parmesan, chèvre.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Mexicaine</p>
+            <span>Tomate, fromage, bœuf épicé, poivrons, chorizo.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Norvégienne</p>
+            <span>Tomate, fromage, saumon frais, crème fraîche </span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Savoyarde</p>
+            <span>Base crème fraîche, mozzarella, lardons, reblochon, pommes de
+              terre.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Super</p>
+            <span>Tomate, fromage, jambon, merguez, bolognaise 100% bœuf, œuf,
+              champignons.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Vénitienne</p>
+            <span>Tomate, fromage, gorgonzola, jambon fumé.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Burger</p>
+            <span>Tomate, sauce bolognaise, cornichons, oignons.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Indienne</p>
+            <span>Base crème fraîche, mozzarella, poulet, champignons,
+              curry.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="bgimg-4">
+    <div class="caption"></div>
+  </div>
+
+  <div class="menu-panel">
+    <div class="content-header">
+      <h3>Desserts</h3>
+    </div>
+    <div class="menu-details">
+      <ul>
+        <li>
+          <div class="standard-meal">
+            <p>Profiteroles au chocolat</p>
+            <span>Duo de choux maison, glace vanille et sauce chocolat
+              noir.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Charlotte aux fruits rouges</p>
+            <span>Biscuit maison & fruits rouges de saison.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Tiramisu nutella-coco</p>
+            <span>Biscuit trempé au café, nutella et coco rappé.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Moelleux au chocolat et sa boule de glace</p>
+            <span>Pâtisserie au chocolat maison avec sa glace vanille.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Cheesecake caramel beurre salé</p>
+            <span>Incontournable gâteau au fromage avec sa crème onctueuse.</span>
+          </div>
+        </li>
+        <li>
+          <div class="standard-meal">
+            <p>Tarte du moment</p>
+            <span>Un dessert qui change selon l’humeur du chef !</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <footer id="footer" class="footer">
+    <div class="footer-bottom py-3">
+      <div class="container">
+        <div class="row cols-xs-space col-sm-space align-items-center">
+          <div class="col-md-7 col-12">
+            <div class="text-xs-center text-sm-left">
+              <ul class="footer-menu">
+                <li>
+                  <a href="#">Accueil</a>
                 </li>
-                <li class="navbar__link after-transform">
-                  <a class="active" href="./menu.html">Menu</a>
+                <li>
+                  <a href="#">A propos de nous</a>
                 </li>
-                <li class="navbar__link after-transform">
-                  <a href="./banquet.html">Banquet</a>
-                </li>
-                <li class="navbar__link after-transform">
-                  <a href="./contact.html">Rapprochons nous</a>
+                <li>
+                  <a href="#">Banquet</a>
                 </li>
               </ul>
-            </nav>
-          </div>
-        </div>
-        <div class="navbar-responsive">
-          <ul class="navbar-responsive__nav">
-            <li class="navbar-responsive__link after-transform">
-              <a href="./index.html">Accueil</a>
-            </li>
-            <li class="navbar-responsive__link after-transform">
-              <a class="active" href="./menu.html">Menu</a>
-            </li>
-            <li class="navbar-responsive__link after-transform">
-              <a href="./banquet.html">Banquet</a>
-            </li>
-            <li class="navbar-responsive__link after-transform">
-              <a href="./contact.html">Rapprochons nous</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
 
-    <div class="intro texturized lg-cm">
-      <div class="box">
-        <h3>MENU DE L'ATELIER</h3>
-        <p>
-          Scroller vers le bas pour découvrir le menu travaillé avec des
-          produits frais et de saison par notre chef Alex.
-        </p>
-        <!-- faites defiler vers le bas -->
-      </div>
-      <img src="./image/carrot.png" alt="" id="carrot-img" />
-    </div>
-
-    <div class="bgimg-7">
-      <div class="caption"></div>
-    </div>
-
-    <div class="menu-panel">
-      <div class="content-header">
-        <h3>Les Entrées</h3>
-      </div>
-      <div class="menu-details">
-        <ul>
-          <li>
-            <div class="standard-meal">
-              <p>Ardoise de charcuterie</p>
-              <span
-                >Terrine de campagne, jambon de pays, rillettes, saucisson sec &
-                cornichons.</span
-              >
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Tataki de Saumon</p>
-              <span>Un saumon au cinq baies snacké et moelleux au cœur.</span>
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Ardoise de foie gras</p>
-              <span
-                >Foie gras de canard exquis accompagné de son chutney
-                d’oignons.</span
-              >
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Risotto au poulet</p>
-              <span
-                >Un risotto crémeux au poulet parfumé au curry et cébette.</span
-              >
-              <!-- cebete au pluriel ? -->
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Assiette du Sud-Ouest</p>
-              <span
-                >Magret fumé, gésiers, pommes de terre, salade & croûtons.</span
-              >
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="bgimg-6">
-      <div class="caption"></div>
-    </div>
-
-    <div class="menu-panel">
-      <div class="content-header">
-        <h3>Les Salades</h3>
-      </div>
-      <div class="menu-details">
-        <ul>
-          <li>
-            <div class="standard-meal">
-              <p>La César (grande ou petite)</p>
-              <span
-                >Huile d’olive, filet de poulet grillé, copeaux de parmesan &
-                sauce césar.</span
-              >
-              <!-- huile d'olive en premier chelou -->
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>La Croustillante (grande ou petite)</p>
-              <span>Duo de chou rouge & chou blanc accompagné de poulet.</span>
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>L’Atelier (grande ou petite)</p>
-              <span
-                >Chèvre pané, pommes de terre, oignons, lardons, cerneaux de
-                noix & sa fine baguette maison aux herbes.</span
-              >
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="bgimg-3">
-      <div class="caption"></div>
-    </div>
-
-    <div class="menu-panel">
-      <div class="content-header">
-        <h3>Les Viandes</h3>
-      </div>
-      <div class="menu-details">
-        <ul>
-          <li>
-            <div class="standard-meal">
-              <p>Entrecôte de bœuf 300gr</p>
-              <span
-                >Belle pièce de bœuf origine UE accompagnée de potatoes
-                maison.</span
-              >
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Pièce du boucher 300gr</p>
-              <span
-                >Filet de bœuf très tendre accompagné de son écrasé de pommes de
-                terre.</span
-              >
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Steak tartare classique 180gr</p>
-              <span
-                >Viande coupée au couteau accompagnée de ses frites maison &
-                condiments.</span
-              >
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Côte de Veau 300gr</p>
-              <span
-                >Superbe viande blanche servie avec ses tagliatelles sauce
-                forestière.</span
-              >
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Sauté d’agneau et son jus à l’ail</p>
-              <span
-                >Morceau de choix cuit à point à savourer avec ses légumes de
-                saisons.</span
-              >
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Burger de l’Atelier 180gr</p>
-              <span
-                >Incontournable avec sa viande, ses oignons rouges, salade,
-                fromage fondant et sa sauce maison.</span
-              >
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="bgimg-8">
-      <div class="caption"></div>
-    </div>
-
-    <div class="menu-panel">
-      <div class="content-header">
-        <h3>Les spécialités</h3>
-      </div>
-      <div class="menu-details">
-        <ul>
-          <li>
-            <div class="standard-meal">
-              <p>Rognons de veau</p>
-              <span
-                >Délicieux rognons de veau flambés au cognac et ses
-                tagliatelles.</span
-              >
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Magret de canard 300gr</p>
-              <span
-                >Délicieux magrets servis avec une sauce fruits rouges & purée
-                de patate douce.</span
-              >
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Camembert rôti au four</p>
-              <span
-                >Délicieuse recette de camembert, frites maisons & salade aux
-                noix.</span
-              >
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="bgimg-2">
-      <div class="caption"></div>
-    </div>
-
-    <div class="menu-panel">
-      <div class="content-header">
-        <h3>Les Poissons</h3>
-      </div>
-      <div class="menu-details">
-        <ul>
-          <li>
-            <div class="standard-meal">
-              <p>Pavé de saumon</p>
-              <span
-                >Saumon cuit au four vapeur sur son lit de poireaux accompagné
-                de riz crémeux aux cébettes.</span
-              >
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Dos de cabillaud 300gr</p>
-              <span
-                >Cabillaud terre et mer cuit à la plancha, huile d’olive,
-                haricots plats & crème de lard.</span
-              >
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Noix de St Jacques</p>
-              <span
-                >Accompagné d’une délicieuse purée de patate douce et riz
-                crémeux.</span
-              >
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Filet de Daurade 300gr</p>
-              <span
-                >Poisson à chair blanche cuit à la plancha & ses légumes de
-                saison.</span
-              >
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="bgimg-5">
-      <div class="caption"></div>
-    </div>
-
-    <div class="menu-panel">
-      <div class="content-header">
-        <h3>Les Pizzas</h3>
-      </div>
-      <div class="menu-details">
-        <ul>
-          <li>
-            <div class="standard-meal">
-              <p>Margherita</p>
-              <span>Tomate, fromage, olives.</span>
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Calzone (Soufflée)</p>
-              <span>Tomate, fromage, jambon, œuf.</span>
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>4 Saisons</p>
-              <span
-                >Tomate, fromage, jambon, cœurs d’artichauds, olives,
-                champignons.</span
-              >
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Reine</p>
-              <span>Tomate, jambon, fromage, champignons.</span>
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>4 fromages</p>
-              <span>Tomate, mozzarella, gorgonzola, parmesan, chèvre.</span>
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Mexicaine</p>
-              <span>Tomate, fromage, bœuf épicé, poivrons, chorizo.</span>
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Norvégienne</p>
-              <span>Tomate, fromage, saumon frais, crème fraîche </span>
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Savoyarde</p>
-              <span
-                >Base crème fraîche, mozzarella, lardons, reblochon, pommes de
-                terre.</span
-              >
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Super</p>
-              <span
-                >Tomate, fromage, jambon, merguez, bolognaise 100% bœuf, œuf,
-                champignons.</span
-              >
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Vénitienne</p>
-              <span>Tomate, fromage, gorgonzola, jambon fumé.</span>
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Burger</p>
-              <span>Tomate, sauce bolognaise, cornichons, oignons.</span>
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Indienne</p>
-              <span
-                >Base crème fraîche, mozzarella, poulet, champignons,
-                curry.</span
-              >
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="bgimg-4">
-      <div class="caption"></div>
-    </div>
-
-    <div class="menu-panel">
-      <div class="content-header">
-        <h3>Desserts</h3>
-      </div>
-      <div class="menu-details">
-        <ul>
-          <li>
-            <div class="standard-meal">
-              <p>Profiteroles au chocolat</p>
-              <span
-                >Duo de choux maison, glace vanille et sauce chocolat
-                noir.</span
-              >
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Charlotte aux fruits rouges</p>
-              <span>Biscuit maison & fruits rouges de saison.</span>
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Tiramisu nutella-coco</p>
-              <span>Biscuit trempé au café, nutella et coco rappé.</span>
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Moelleux au chocolat et sa boule de glace</p>
-              <span>Pâtisserie au chocolat maison avec sa glace vanille.</span>
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Cheesecake caramel beurre salé</p>
-              <span
-                >Incontournable gâteau au fromage avec sa crème onctueuse.</span
-              >
-            </div>
-          </li>
-          <li>
-            <div class="standard-meal">
-              <p>Tarte du moment</p>
-              <span>Un dessert qui change selon l’humeur du chef !</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <footer id="footer" class="footer">
-      <div class="footer-bottom py-3">
-        <div class="container">
-          <div class="row cols-xs-space col-sm-space align-items-center">
-            <div class="col-md-7 col-12">
-              <div class="text-xs-center text-sm-left">
-                <ul class="footer-menu">
+              <div class="copyright mt-1">
+                <ul class="copy-links">
                   <li>
-                    <a href="#">Accueil</a>
+                    © 2019 Wilrib
                   </li>
                   <li>
-                    <a href="#">A propos de nous</a>
+                    <a href="#">Terms</a>
                   </li>
                   <li>
-                    <a href="#">Banquet</a>
-                  </li>
-                </ul>
-
-                <div class="copyright mt-1">
-                  <ul class="copy-links">
-                    <li>
-                      © 2019 Wilrib
-                    </li>
-                    <li>
-                      <a href="#">Terms</a>
-                    </li>
-                    <li>
-                      <a href="#">Mentions légales</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-5">
-              <div class="text-xs-center text-sm-right">
-                <ul class="social-media social-media--style-1-v4">
-                  <li>
-                    <a
-                      href="#"
-                      class="facebook"
-                      target="_blank"
-                      data-toggle="tooltip"
-                      data-original-title="Facebook"
-                    >
-                      <i class="fa fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="instagram"
-                      target="_blank"
-                      data-toggle="tooltip"
-                      data-original-title="Instagram"
-                    >
-                      <i class="fa fa-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="email"
-                      target="_blank"
-                      data-toggle="tooltip"
-                      data-original-title="Email"
-                    >
-                      <i class="fa fa-envelope"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="tripadvisor"
-                      target="_blank"
-                      data-toggle="tooltip"
-                      data-original-title="TripAdvisor"
-                    >
-                      <i class="fa fa-tripadvisor"></i>
-                    </a>
+                    <a href="#">Mentions légales</a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
+
+          <div class="col-md-5">
+            <div class="text-xs-center text-sm-right">
+              <ul class="social-media social-media--style-1-v4">
+                <li>
+                  <a href="#" class="facebook" target="_blank" data-toggle="tooltip" data-original-title="Facebook">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="instagram" target="_blank" data-toggle="tooltip" data-original-title="Instagram">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="email" target="_blank" data-toggle="tooltip" data-original-title="Email">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="tripadvisor" target="_blank" data-toggle="tooltip"
+                    data-original-title="TripAdvisor">
+                    <i class="fa fa-tripadvisor"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
