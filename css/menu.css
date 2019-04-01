@@ -85,7 +85,7 @@ p {
   font-size: 25px !important;
   font-weight: bold;
   margin-bottom: 0 !important;
-  padding-top: 30px;
+  /* padding-top: 30px; */
 }
 
 .menu-panel {
@@ -106,8 +106,8 @@ ul {
 
 .menu-details {
   width: 60%;
-  margin-top: 40px;
   font-size: 22px;
+  padding-top: 80px;
   line-height: 24px;
   font-weight: lighter;
 }
@@ -414,6 +414,7 @@ ul {
   position: relative;
 }
 
+
 .after-transform a:after {
   content: "";
   transition: all 0.3s ease;
@@ -528,4 +529,12 @@ ul {
   .navbar__responsive {
     transform: translate3d(-100%, 0, 0) !important;
   }
+}
+
+
+p#price {
+  position: relative;
+  bottom: 65px;
+  left: 155%;
+  width: fit-content;
 }
