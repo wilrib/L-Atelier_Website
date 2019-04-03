@@ -104,8 +104,20 @@ ul {
   padding-left: 0;
 }
 
+.table td {
+  border-top: none !important;
+}
+
+.table td span {
+  font-size: 18px;
+}
+
+.table td div {
+  padding-left: 0;
+  text-align: left;
+}
+
 .menu-details {
-  width: 60%;
   font-size: 22px;
   padding-top: 80px;
   line-height: 24px;
@@ -284,6 +296,13 @@ ul {
 
   #carrot-img {
     display: none;
+  }
+
+  .logo {
+    height: 130px;
+    transition: all .25s ease-out;
+    position: relative;
+    top: 40px;
   }
 }
 
@@ -530,6 +549,7 @@ ul {
     transform: translate3d(-100%, 0, 0) !important;
   }
 }
+
 
 
 p#price {

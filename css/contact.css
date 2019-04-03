@@ -135,10 +135,9 @@ ul {
 
 #carrot-img {
   position: relative;
-  left: 62%;
-  height: 85vh;
-  top: auto;
-  bottom: -30%;
+  left: 62vw;
+  height: 40vw;
+  top: 30px;
 }
 
 /* # Header, Main Menu
@@ -496,6 +495,13 @@ ul {
 
   #carrot-img {
     display: none;
+  }
+
+  .logo {
+    height: 130px;
+    transition: all .25s ease-out;
+    position: relative;
+    top: 40px;
   }
 }
 
