@@ -31,7 +31,7 @@ html {
 
 .bgimg-7 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url("https://images.pexels.com/photos/247708/pexels-photo-247708.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    url("../image/restaurant.jpg");
 }
 
 .caption {
@@ -70,6 +70,13 @@ p {
   font-weight: lighter;
   margin-bottom: 0 !important;
   padding-top: 30px;
+}
+
+.box p {
+  color: #4d443d;
+  font-size: 25px !important;
+  font-weight: bold;
+  margin-bottom: 0 !important;
 }
 
 .menu-panel {
@@ -117,7 +124,7 @@ ul {
 }
 
 .logo {
-  height: 170px;
+  height: 150px;
   transition: all 0.25s ease-out;
 }
 

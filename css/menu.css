@@ -41,7 +41,8 @@ html {
 
 .bgimg-4 {
   background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)),
-    url("../image/bimg-13-min.jpg");
+    url("../image/Photos/IMG_2828.jpeg");
+  /* url("../image/bimg-13-min.jpg"); */
 }
 
 .bgimg-5 {
@@ -62,6 +63,11 @@ html {
 .bgimg-8 {
   background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)),
     url("../image/bimg-16.jpg");
+}
+
+#id-prix {
+  padding-bottom: 40px;
+  padding-top: 0;
 }
 
 .caption {
