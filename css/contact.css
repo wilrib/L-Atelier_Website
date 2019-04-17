@@ -126,6 +126,7 @@ ul {
 .logo {
   height: 150px;
   transition: all 0.25s ease-out;
+  filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
 }
 
 .logo-scroll {
@@ -140,11 +141,12 @@ ul {
   top: 40%;
 }
 
-#carrot-img {
+#map-img {
   position: relative;
   left: 62vw;
-  height: 40vw;
-  top: 30px;
+  height: 20vw;
+  top: 181px;
+  filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
 }
 
 /* # Header, Main Menu
@@ -285,20 +287,6 @@ ul {
 #top-social-menu li a:hover {
   text-decoration: none;
   color: #543a1a;
-}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-
-  .bgimg-2,
-  .bgimg-3,
-  .bgimg-4,
-  .bgimg-5,
-  .bgimg-6,
-  .bgimg-7,
-  .bgimg-8 {
-    background-attachment: scroll;
-  }
 }
 
 * {
@@ -500,7 +488,7 @@ ul {
     display: none;
   }
 
-  #carrot-img {
+  #map-img {
     display: none;
   }
 

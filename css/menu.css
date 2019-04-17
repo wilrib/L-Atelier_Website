@@ -152,6 +152,7 @@ ul {
 .logo {
   height: 150px;
   transition: all .25s ease-out;
+  filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
 }
 
 .logo-scroll {
@@ -340,7 +341,6 @@ ul {
   .bgimg-6,
   .bgimg-7,
   .bgimg-8 {
-    background-attachment: scroll;
     height: 25vh;
   }
 }

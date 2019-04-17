@@ -132,6 +132,7 @@ ul {
 .logo {
     height: 150px;
     transition: all .25s ease-out;
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
 }
 
 .logo-scroll {
@@ -146,11 +147,12 @@ ul {
     top: 40%;
 }
 
-#carrot-img {
+#cocktail-img {
     position: relative;
-    left: 62vw;
-    height: 40vw;
-    top: 30px;
+    left: 66vw;
+    height: 24vw;
+    top: 195px;
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
 }
 
 .navbar {
@@ -280,7 +282,7 @@ ul {
         margin: 0;
     }
 
-    #carrot-img {
+    #cocktail-img {
         display: none;
     }
 
@@ -320,7 +322,6 @@ ul {
     .bgimg-6,
     .bgimg-7,
     .bgimg-8 {
-        background-attachment: scroll;
         height: 25vh;
     }
 }
@@ -525,7 +526,7 @@ ul {
         display: none;
     }
 
-    #carrot-img {
+    #cocktail-img {
         display: none;
     }
 }
@@ -552,7 +553,7 @@ p#price {
 
 .text-center.mt-5.position-rel {
     position: relative;
-    top: 82px;
+    top: 40px;
 }
 
 /* table */

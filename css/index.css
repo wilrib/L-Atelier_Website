@@ -143,6 +143,7 @@ ul {
 .logo {
     height: 150px;
     transition: all .25s ease-out;
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
 }
 
 .logo-scroll {
@@ -507,20 +508,6 @@ ul {
         transform: translate3d(-100%, 0, 0) !important;
     }
 }
-
-@media only screen and (max-device-width: 1024px) {
-
-    .bgimg-2,
-    .bgimg-3,
-    .bgimg-4,
-    .bgimg-5,
-    .bgimg-6,
-    .bgimg-7,
-    .bgimg-8 {
-        background-attachment: scroll;
-    }
-}
-
 
 /* RGDP BANDEAU */
 #okCookie {
