@@ -42,7 +42,7 @@ a {
 
 .bgimg-2 {
   background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)),
-    url("../image/bimg-9-min.jpg");
+    url("../image/cabillaud.jpeg");
 }
 
 .bgimg-3 {
@@ -67,17 +67,17 @@ a {
 
 .bgimg-7 {
   background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)),
-    url("../image/bimg-15.jpg");
+    url("../image/risoto.jpg");
 }
 
 .bgimg-8 {
   background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)),
-    url("../image/bimg-16.jpg");
+    url("../image/rognon.jpg");
 }
 
 #id-prix {
-  padding-bottom: 40px;
-  padding-top: 0;
+  padding-right: 0;
+  vertical-align: initial;
 }
 
 .caption {
