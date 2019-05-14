@@ -6,6 +6,13 @@ html {
     color: #777;
 }
 
+#mention-img {
+    position: relative;
+    left: 66vw;
+    height: 16vw;
+    top: 195px;
+}
+
 .footer-bottom {
     background: #7a1821 !important;
 }

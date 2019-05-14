@@ -23,6 +23,13 @@ a {
   color: white !important;
 }
 
+#contact-img {
+  position: relative;
+  left: 66vw;
+  height: 16vw;
+  top: 195px;
+}
+
 .bgimg-7 {
   position: relative;
   z-index: -1;
