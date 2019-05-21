@@ -6,13 +6,6 @@ html {
     color: #777;
 }
 
-#mention-img {
-    position: relative;
-    left: 66vw;
-    height: 16vw;
-    top: 195px;
-}
-
 .footer-bottom {
     background: #7a1821 !important;
 }
@@ -28,31 +21,6 @@ footer .social-media>li>a>i {
 .footer .copy-links li,
 a {
     color: white !important;
-}
-
-.bgimg-7 {
-    position: relative;
-    z-index: -1;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 40vh;
-    max-height: 400px;
-}
-
-.bgimg-7 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-        url("../image/restaurant.jpg");
-}
-
-.caption {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #4d443d;
 }
 
 .map-container {
@@ -113,7 +81,7 @@ ul {
     width: -webkit-fill-available;
     background: url(../image/texture-2-min.jpg);
     background-size: cover;
-    box-shadow: 0 5px 150px #000;
+    box-shadow: 0 5px 50px #000;
     z-index: 1;
     position: relative;
     top: 0;
