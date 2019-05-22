@@ -75,6 +75,15 @@ a {
     url("../image/rognon.jpg");
 }
 
+span.tiny {
+  font-weight: lighter;
+  font-size: 14px !important;
+}
+
+.content-header h3 {
+  text-align: left;
+}
+
 #id-prix {
   padding-right: 0;
   vertical-align: initial;
