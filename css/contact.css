@@ -177,6 +177,7 @@ ul {
   padding: 0.5rem 1rem;
   position: fixed !important;
   width: 100%;
+  top: 0
 }
 
 @media (min-width: 768px) {
@@ -193,6 +194,11 @@ ul {
 }
 
 @media (max-width: 768px) {
+
+  #page-respons {
+    position: relative;
+    top: 60px;
+  }
 
   .bgimg-7 {
     background-attachment: initial !important;

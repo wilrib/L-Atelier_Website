@@ -154,6 +154,7 @@ ul {
     padding: 0.5rem 1rem;
     position: fixed !important;
     width: 100%;
+    top: 0
 }
 
 @media (min-width: 768px) {
@@ -180,6 +181,11 @@ ul {
 
     .navbar {
         background-color: #7a1821;
+    }
+
+    #page-respons {
+        position: relative;
+        top: 60px;
     }
 }
 
