@@ -248,6 +248,16 @@ ul {
 
 @media (max-width: 768px) {
 
+  .bgimg-2,
+  .bgimg-3,
+  .bgimg-4,
+  .bgimg-5,
+  .bgimg-6,
+  .bgimg-7,
+  .bgimg-8 {
+    background-attachment: initial !important;
+  }
+
   p {
     text-align: left;
   }

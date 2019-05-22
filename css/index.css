@@ -171,7 +171,7 @@ ul {
     justify-content: space-between;
     padding: 0.5rem 1rem;
     position: fixed !important;
-    width: 100vw;
+    width: 100%;
 }
 
 * {
@@ -325,6 +325,11 @@ ul {
 }
 
 @media (max-width: 768px) {
+
+    .carousel-item {
+        background-attachment: initial !important;
+    }
+
     .navbar__nav {
         display: none !important;
     }

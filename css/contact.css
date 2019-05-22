@@ -176,7 +176,7 @@ ul {
   justify-content: space-between;
   padding: 0.5rem 1rem;
   position: fixed !important;
-  width: -webkit-fill-available;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -193,6 +193,11 @@ ul {
 }
 
 @media (max-width: 768px) {
+
+  .bgimg-7 {
+    background-attachment: initial !important;
+  }
+
   .menu-panel {
     padding: 50px 30px;
     text-align: justify;
