@@ -153,6 +153,7 @@ ul {
     width: 0%;
     left: 50%;
 }
+
 /* ======A RAJOUTER FIN====== */
 
 .navbar {
@@ -170,7 +171,7 @@ ul {
     justify-content: space-between;
     padding: 0.5rem 1rem;
     position: fixed !important;
-    width: -webkit-fill-available;
+    width: 100vw;
 }
 
 * {
