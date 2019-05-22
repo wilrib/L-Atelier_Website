@@ -32,6 +32,10 @@ a {
     font-size: larger !important;
 }
 
+#demo {
+    left: 300px
+}
+
 .bgimg-1 {
     position: relative;
     z-index: -1;

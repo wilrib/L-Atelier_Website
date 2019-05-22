@@ -42,4 +42,12 @@ $(document).ready(function () {
             $("#main-navbar").removeClass("navbar-scroll");
         }
     });
+    $('.table-responsive').delay(600).animate({
+        scrollLeft: $('#demo').css('left')
+    }, 800, function () {
+
+        $('.table-responsive').animate({
+            scrollLeft: 0
+        }, 500);
+    });
 });
